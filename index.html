@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMG_5153.PNG">
+    <title>Cálculo do Cliques</title>
+
+</head>
+<body>
+    <div class="conteudo">
+        <h1 class="typing-demo">Cálculo de Cliques</h1>
+    
+        <button id="btn">CLICAR AQUI</button>
+    
+        <p>Botão clicado <span id="display">0</span> vezes!</p>
+        <button id="btnReset">RESET</button>
+    </div>
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var btnReset = document.getElementById("btnReset");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function calc() {
+            count++;
+            disp.innerHTML = count;
+        }
+        btnReset.onclick = function reset() {
+            count = 0;
+            disp.innerHTML = count;
+        }
+    </script>
+</body>
+</html>
